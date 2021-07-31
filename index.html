@@ -46,9 +46,9 @@
                 <link rel="stylesheet" type="text/css" href="/customer/minified-css/all.min.css?v=202104221530" />
         <!-- byAir -->
         <!-- <link rel="stylesheet" type="text/css" href="https://image.makewebeasy.net/makeweb/prod/css/light/theme-system.min.css?v=202103011137" /> -->
-        <link rel="stylesheet" type="text/css" href="/customer/minified-css/light/theme-system.css?v=20210730175707" />
+        <link rel="stylesheet" type="text/css" href="/customer/minified-css/light/theme-system.css?v=20210731094729" />
         <link rel="stylesheet" type="text/css" href="/customer/minified-css/light/theme-system2.css?v=202103011137" />
-        <link rel="stylesheet" type="text/css" href="/customer-css/style_p9nPd7FfO.min.css?v=1627642603" />
+        <link rel="stylesheet" type="text/css" href="/customer-css/style_p9nPd7FfO.min.css?v=1627698356" />
         
         <title>AVANE - THAILAND</title>
 
@@ -421,6 +421,9 @@
         .sps--abv .headerDesktop nav #top-mb {
             margin-bottom: 0;
         }
+                .sps--abv .headerDesktop nav #top-sticky #cart{
+            display: none !important;
+        }
                 .sps--blw .headerDesktop nav #top-sticky {
             position: fixed;
             top: -56px;
@@ -438,6 +441,9 @@
         .sps--blw .headerDesktop nav #top-mb {
             padding-bottom: 56px;
                     }
+                    .sps--blw #top-sticky #logotop{
+                display: none !important;
+            }
         
         .sps--blw .headerDesktop nav #top-sticky #cart{
             display: inline-flex !important
@@ -576,778 +582,76 @@
             margin: auto;
         }
         .navbar-text{
-            min-height: 28px;
+            min-height: 24px;
+        }
+        .text-truncate{
+            width: 100%;
         }
         .text-truncate p{
-            margin-bottom: 0;
-            line-height: 28px;
+            margin-bottom: 0 !important;
+            line-height: 24px;
         }
-        #logotop{
-            margin: 10px 10px 10px 0 ;
-            min-height: 50px;
-            padding: 0;
-        }
-        #logotop>.navbar-brand{
-            margin: 0;
-        }
+
         #menutop{
-            margin: 10px 10px 10px 0  !important;
+            margin: 10px 10px 10px 0 !important;
         }
         .topwidget-menu{
             margin: 0 !important;
         }
-                    .sps--blw #top-sticky #logotop{
-                display: none !important;
-            }
-                .sps--blw #top-sticky #logotop .img-logo {
-            width: auto;
-            max-height: 50px;
+        .sps--abv .row-display-justify {
+            -webkit-box-pack: center !important;
+            -ms-flex-pack: center !important;
+            justify-content: center !important;
+        }
+        .sps--blw .row-display-justify {
+            -webkit-box-pack: flex-start !important;
+            -ms-flex-pack: flex-start !important;
+            justify-content: flex-start !important;
+        }
+        #top-area  #logotop {
+            margin: 10px 0px 0px 0px;
+        }
+        .navbar-brand .img-logo {
+            max-width: 100%;
+            min-width: 1px;
+            min-height: 1px;
+            max-height: 100%;
+        }
+        #top-sticky #cart2{
+            display: none !important;
+        }
+        .sps--blw #top-sticky #cart2{
+            display: inline-flex !important;
+
         }
     }
 </style>
+
 <nav id="topZone" class="navbar-expand-xl">
-    
-            <div id="top-area">
-            <div id="top-sticky">
+        <div id="top-area">
+                    <div id="top-mb">
                 <div class="container">
                     <div class="row no-gutters">
-                                                                            <div class="col col-lg-auto d-lg-inline-flex">
-                                <div id="logotop" class="hoverOverlay d-inline-flex align-middle">
-                                    <span class="navbar-brand">
-                                        <a href="/" style="text-decoration: none;">
-                                                <style> 
+                        <div class="col col-lg text-center">
+                            <div id="logotop" class="hoverOverlay d-inline-flex">
+                                <span class="navbar-brand">
+                                    <a href="/" style="text-decoration: none;">
+                                            <style> 
         @media (min-width: 1025px){ 
-            /* .img-logo { 
-                                                                                    } 
-        }  */
+            /* .img-logo {  */
+                                                                                    /* }  */
+        } 
     </style>
     <img src="https://image.makewebeasy.net/makeweb/0/p9nPd7FfO/DefaultData/tm086_logo_2.png?v=202012190947" alt="logo" title="logo" class="d-inline-block img-logo"/>
-                                        </a>
-                                    </span>
-                                </div>
+                                    </a>
+                                </span>
                             </div>
-                                                                            <div class="col-auto col-lg-auto d-lg-inline-flex align-items-center">
-                                <div id="menutop" class="hoverOverlay d-inline-flex">
-                                    <div class="collapse navbar-collapse">
-                                        <style type="text/css">
-    .topwidget-menu .navbar-nav .dropdown-menu {
-        padding: 0;
-        margin: 0;
-    }
-    ul.navbar-topmenu.navbar-nav > li {
-        display: table-cell; 
-    }
-    ul.navbar-topmenu.navbar-nav li {
-        list-style: outside none none;
-    }
-    ul.navbar-topmenu.navbar-nav div.new-line-menu{
-        clear: left;
-    }
-    ul.navbar-topmenu.navbar-nav .border-tran{
-        border-right: 1px solid transparent;
-    }
-    .fix-up-size{
-        font-size: 1.05em !important;
-    }
-    /*PC hack to hover*/
-    @media (min-width: 1025px) {
-        ul.navbar-topmenu.navbar-nav > li.nav-item:hover > .menu-column{
-            display:flex !important;
-        }
-        ul.navbar-topmenu.navbar-nav .menu-column{
-            box-shadow: 0 6px 12px rgba(0,0,0,0.175);
-        }
-        .topwidget-menu {
-            margin: 10px;
-        }
-        ul.dropdown-menu.dropdown-menu-right{
-            left: unset;
-            right:0;
-        }
-        .dropdownfix-menu-right {
-            right:100% !important;
-            left:auto !important;
-        }
-        .public-topmenu .dropdown-menu-right .fa-chevron-right {
-            transform: rotate(180deg);
-            left: 0;
-            position: absolute;
-            top: 12px;
-        }
-        .public-topmenu .dropdown-menu-right .fa-chevron-down{
-            transform: rotate(90deg);
-            left: 0;
-            position: absolute;
-            top: 12px;
-        }
-        .more.hidden{
-            display:none;
-        }
-        .public-topmenu .dropdown-menu:not(.dropdown-menu-right) .fa-chevron-down{
-            transform: rotate(-90deg);
-        }
-
-        .public-topmenu .topmenuLg{
-            border-right:none !important;
-        }
-        ul.navbar-topmenu.navbar-nav a {
-            display: block;
-            margin: 0px;
-        }
-        ul.navbar-topmenu.navbar-nav > li.nav-item > .menu-column {
-            position: absolute;
-            display: none;
-            margin: 0px;
-            padding: 15px 0px;
-            border-collapse: separate;
-            border-spacing: 0;
-            width:100%;
-            left: 0px;
-        }
-        ul.navbar-topmenu.navbar-nav > li.nav-item .each-col{
-            margin-top:15px; 
-            margin-bottom:15px; 
-        }
-        ul.navbar-topmenu.navbar-nav > li > .menu-column > div > ul{
-            margin: 0px;
-            padding: 0px;
-            border-collapse: separate;
-            border-spacing: 0;
-        }
-        ul.navbar-topmenu.navbar-nav .menu-column li {
-            float: none;
-            margin: 0px;
-            padding: 0px;
-        }
-        /* sub a */
-        ul.navbar-topmenu.navbar-nav .menu-column-sub > li > a {
-            padding: 8px 15px;
-            text-align: left;
-            border: none;
-        }
-        /* sub a hover */
-        /* ul.navbar-topmenu.navbar-nav .topmenu_li_lv2:hover > a { 
-            
-        } */
-        .engine-menu .topmenuLg{
-            border-right:none !important;
-        }
-
-        ul.navbar-topmenu.navbar-nav .row-menucol-pad{
-            padding-bottom:60px;
-        } 
-        ul.navbar-topmenu.navbar-nav .text-lv2-bold{
-            font-weight: bold !important;
-        }
-        ul.navbar-topmenu.navbar-nav .text-lv3-pad{
-            padding-left: 30px !important;
-        }
-        ul.navbar-topmenu.navbar-nav .text-lv4-pad{
-            padding-left: 45px !important;
-        }
-        ul.navbar-topmenu.navbar-nav .no-p-first{
-            padding:0px 0px 0px 0px;
-            float: left;
-        }
-        ul.navbar-topmenu.navbar-nav .no-p{
-            padding:60px 0px 0px 0px;
-            float: left;
-        }
-        ul.navbar-topmenu.navbar-nav > li.nav-item > .menu-column.wid-one{
-            min-width: 285px;
-            left: 0px;
-        }
-        ul.navbar-topmenu.navbar-nav > li.nav-item > .menu-column.wid-two{
-            min-width: 569px;
-            left: 0px;
-        }
-        ul.navbar-topmenu.navbar-nav > li.nav-item > .menu-column.wid-tree{
-            min-width: 854px;
-            left: 0px;
-           /* left: calc(50% + 0px);
-            transform: translate(-50%, 0%);
-            top: calc(100% - 10px); */
-        }
-        ul.navbar-topmenu.navbar-nav > li.nav-item > .menu-column.wid-fourmore{
-            min-width: 1140px;
-            left: 0px;
-           /* left: calc(50% + 0px);
-            transform: translate(-50%, 0%);
-            top: calc(100% - 10px); */
-        }
-        ul.navbar-topmenu.navbar-nav > li.nav-item > .menu-column.mega-full{
-            min-width: calc(100vw - 14px);
-            left: 0px;
-            max-height: 600px;
-            overflow-x: hidden;
-            overflow-y: auto;
-        }
-        ul.navbar-topmenu.navbar-nav > li.nav-item .col-one-minwid{
-            min-width: 285px;
-        }
-
-        ul.navbar-topmenu.navbar-nav > li.nav-item.rev-po{
-            position: relative;
-        }
-        ul.navbar-topmenu.navbar-nav > li.nav-item.uns-po{
-            position: unset;
-        }
-
-       /*lv3 more only*/
-       ul.navbar-topmenu.navbar-nav .ul.menu-fix-li{
-            box-shadow: 0 6px 12px rgba(0,0,0,0.175);
-        }
-        ul.navbar-topmenu.navbar-nav > li.nav-item:hover > ul.menu-fix-li{
-            display:block !important;
-        } 
-        ul.navbar-topmenu.navbar-nav > li.nav-item > ul.menu-fix-li li:hover > .dropdown-menu{
-            display:flex !important;
-        }
-       
-        ul.navbar-topmenu.navbar-nav > li.nav-item > ul.menu-fix-li{
-            position: absolute;
-            display: none;
-            margin: 0px;
-            padding: 0px 0px;
-            border-collapse: separate;
-            border-spacing: 0;
-            border: none;
-          /*  width:100%; */
-            left: 0;
-            right: auto;
-            top: 100%;
-            white-space: nowrap;
-        }
-
-        ul.navbar-topmenu.navbar-nav > li.nav-item > ul.menu-fix-li li {
-            position: relative;
-        }
-
-        ul.navbar-topmenu.navbar-nav ul.menu-fix-li .mega-full{
-            min-width: 960px;
-            right: 100% !important;
-            left: auto !important;
-            top: 0px;
-            max-height: 600px;
-            overflow-x: hidden;
-            overflow-y: auto;
-        }
-        /* ul.navbar-topmenu.navbar-nav > li.nav-item > ul.menu-fix-li .menu-column{ */
-            /* padding: 15px 0px; */
-        /* } */
-        ul.navbar-topmenu.navbar-nav > li.nav-item > ul.menu-fix-li .menu-column ul {
-            margin: 0px;
-            padding: 0px;
-            border-collapse: separate;
-            border-spacing: 0;
-        }
-    }
-    @media only screen and (min-width: 1193px){
-        ul.navbar-topmenu.navbar-nav > li.nav-item > .menu-column.mega-container{
-            min-width: 1170px;
-            left: 0px;
-            max-height: 600px;
-            overflow-x: hidden;
-            overflow-y: auto;
-        }
-        ul.navbar-topmenu.navbar-nav ul.menu-fix-li .mega-container{
-            position: absolute;
-            min-width: 858px;
-            right: 100% !important;
-            left: auto !important;
-            top: 0px;
-            max-height: 600px;
-            overflow-x: hidden;
-            overflow-y: auto;
-        }
-    }
-
-    @media only screen and (min-width: 1025px) and (max-width: 1192px){
-        ul.navbar-topmenu.navbar-nav > li.nav-item > .menu-column.mega-container{
-            min-width: 1080px;
-            left: 0px;
-            max-height: 600px;
-            overflow-x: hidden;
-            overflow-y: auto;
-        }
-        ul.navbar-topmenu.navbar-nav ul.menu-fix-li .mega-container{
-            position: absolute;
-            min-width: 772px;
-            right: 100% !important;
-            left: auto !important;
-            top: 0px;
-            max-height: 600px;
-            overflow-x: hidden;
-            overflow-y: auto;
-        }
-    }
-    @media only screen and (min-width: 992px) and (max-width: 1024px){
-        ul.navbar-topmenu.navbar-nav > li.nav-item > .menu-column.mega-container{
-            min-width: 960px;
-            left: 0px;
-            max-height: 400px;
-            overflow-x: hidden;
-            overflow-y: auto;
-        }
-        ul.navbar-topmenu.navbar-nav ul.menu-fix-li .mega-container{
-            position: absolute;
-            min-width: 783px;
-            right: 100% !important;
-            left: auto !important;
-            top: 0px;
-            max-height: 400px;
-            overflow-x: hidden;
-            overflow-y: auto;
-        }
-    }
-
-
-    /* tablet*/
-    @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        ul.navbar-topmenu.navbar-nav ul{
-            box-shadow: 0 6px 12px rgba(0,0,0,0.175);
-        }
-    }
-    /*mobile tablet*/
-    @media  only screen and (max-width: 1024px) {
-        .topwidget-menu .arrowCollapse{
-            width: 55px;
-            position: absolute;
-            right: 0px;
-            top: 25%;
-            text-align: center;
-            height: 22px;
-        }
-        ul.navbar-topmenu.navbar-nav a{
-            text-align: left !important;
-            white-space: normal;
-        }
-        ul.navbar-topmenu.navbar-nav .fa-chevron-down{
-                        transition: all .3s ease 0s;
-            -ms-transition: all .3s ease 0s;
-            -webkit-transition: all .3s ease 0s;
-            -moz-transition: all .3s ease 0s;
-        }
-        ul.navbar-topmenu.navbar-nav .fa-chevron-right{
-                         transform: rotate(90deg);
-            transition: all .3s ease 0s;
-            -ms-transition: all .3s ease 0s;
-            -webkit-transition: all .3s ease 0s;
-            -moz-transition: all .3s ease 0s;
-                    }
-        
-        ul.navbar-topmenu.navbar-nav span.arrowCollapse > .fa-chevron-right{
-            right: 12px;
-            top: 27%;
-        }
-
-        ul.navbar-topmenu.navbar-nav a{
-            word-wrap: break-word;
-        }
-        ul.navbar-topmenu.navbar-nav .more{
-            display:none !important;
-        }
-        .public-topmenu .dropdown.show > a > .arrowCollapse{
-            transform: rotate(180deg);
-            -ms-transform: rotate(180deg);
-            -webkit-transform: rotate(180deg);
-            -moz-transform: rotate(180deg);
-        }
-        .public-topmenu ul.dropdown-menu.show > li.show:not(.dropdown) > a > svg.fa-chevron-right{
-            transform: rotate(270deg);
-            -ms-transform: rotate(270deg);
-            -webkit-transform: rotate(270deg);
-            -moz-transform: rotate(270deg);
-        }
-        .public-topmenu li.show:not(.dropdown) > a > .arrowCollapse > svg{
-            transform: rotate(270deg);
-            -ms-transform: rotate(270deg);
-            -webkit-transform: rotate(270deg);
-            -moz-transform: rotate(270deg);
-        }
-        
-        ul.navbar-topmenu.navbar-nav > li > ul > li > a {
-             padding-left: 30px !important;
-        }
-        ul.navbar-topmenu.navbar-nav ul ul a {
-            padding-left: 45px !important;
-        }
-    }
-</style>
-<div class="topwidget-menu">
-    <ul class="navbar-nav navbar-topmenu public-topmenu">
-                                    <li class="nav-item ">
-                    <a class="nav-link abl1" id="topmenuonpage" data-onhome="home" href="/" target="_self">
-                        หน้าแรก 
-                    </a>
-                </li>
-                                                <li class="nav-item dropdown  rev-po">
-                    <a class="nav-link abl1"   href="javascript:void(0);" target="_self" style="position: relative;">
-                        สินค้าและผลิตภัณฑ์                                                    <i class="fal fa-chevron-down fa-xs fa-fw arrowCollapse"></i>
-                                            </a>
-
-                    <div class="dropdown-menu menu-column row mega-container">
-                                                    <div class="each-col col-auto col-one-minwid ml-auto mr-auto no-p-first border-tran">
-                                <ul class="menu-column-sub">
-                                   
-                                    <li class="topmenu_li_lv2">
-                                        <a class="nav-link dropdown-item abl2 text-lv2-bold"   href="/category" target="_self">
-                                            <b class="fix-up-size">สินค้า</b>
-                                        </a>
-                                    </li>
-                                                                    </ul>
-                            </div>
-                                            </div>
-
-                </li>
-                                                <li class="nav-item ">
-                    <a class="nav-link abl1"   href="/รีวิวผู้ใช้งาน" target="_self">
-                        รีวิวผู้ใช้งาน 
-                    </a>
-                </li>
-                                                <li class="nav-item dropdown  rev-po">
-                    <a class="nav-link abl1"   href="javascript:void(0);" target="_self" style="position: relative;">
-                        วิธีการสั่งซื้อสินค้า                                                    <i class="fal fa-chevron-down fa-xs fa-fw arrowCollapse"></i>
-                                            </a>
-
-                    <div class="dropdown-menu menu-column row mega-container">
-                                                    <div class="each-col col no-p-first border-btw">
-                                <ul class="menu-column-sub">
-                                   
-                                    <li class="topmenu_li_lv2">
-                                        <a class="nav-link dropdown-item abl2 text-lv2-bold"   href="/informpayment" target="_self">
-                                            <b class="fix-up-size">แจ้งการชำระเงิน</b>
-                                        </a>
-                                    </li>
-                                                                    </ul>
-                            </div>
-                                                    <div class="each-col col no-p-first border-tran">
-                                <ul class="menu-column-sub">
-                                   
-                                    <li class="topmenu_li_lv2">
-                                        <a class="nav-link dropdown-item abl2 text-lv2-bold"   href="/ordertracking" target="_self">
-                                            <b class="fix-up-size">ติดตามสถานะการสั่งซื้อ</b>
-                                        </a>
-                                    </li>
-                                                                    </ul>
-                            </div>
-                                            </div>
-
-                </li>
-                                                <li class="nav-item ">
-                    <a class="nav-link abl1"   href="javascript:void(0);" target="_self">
-                        สมัครตัวแทนจำหน่าย 
-                    </a>
-                </li>
-                                                <li class="nav-item dropdown topmenuLg rev-po">
-                    <a class="nav-link abl1"   href="javascript:void(0);" target="_self" style="position: relative;">
-                        เพิ่มเติม                                                    <i class="fal fa-chevron-down fa-xs fa-fw arrowCollapse"></i>
-                                            </a>
-
-                    <div class="dropdown-menu menu-column row mega-container">
-                                                    <div class="each-col col no-p-first border-btw">
-                                <ul class="menu-column-sub">
-                                   
-                                    <li class="topmenu_li_lv2">
-                                        <a class="nav-link dropdown-item abl2 text-lv2-bold"   href="/เกี่ยวกับเรา" target="_self">
-                                            <b class="fix-up-size">เกี่ยวกับเรา</b>
-                                        </a>
-                                    </li>
-                                                                    </ul>
-                            </div>
-                                                    <div class="each-col col no-p-first border-btw">
-                                <ul class="menu-column-sub">
-                                   
-                                    <li class="topmenu_li_lv2">
-                                        <a class="nav-link dropdown-item abl2 text-lv2-bold"   href="/contactus" target="_self">
-                                            <b class="fix-up-size">ติดต่อเรา</b>
-                                        </a>
-                                    </li>
-                                                                    </ul>
-                            </div>
-                                                    <div class="each-col col no-p-first border-tran">
-                                <ul class="menu-column-sub">
-                                   
-                                    <li class="topmenu_li_lv2">
-                                        <a class="nav-link dropdown-item abl2 text-lv2-bold"   href="/categorycontent" target="_self">
-                                            <b class="fix-up-size">สาระน่ารู้</b>
-                                        </a>
-                                    </li>
-                                                                    </ul>
-                            </div>
-                                            </div>
-
-                </li>
-                    
-        <li class="nav-item dropdown more hidden" data-width="80">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="javascript:void(0)">
-                เพิ่มเติม <i class="fal fa-chevron-down fa-xs fa-fw arrowCollapse"></i>
-            </a>
-            <ul class="dropdown-menu menu-fix-li"></ul>
-        </li>
-    </ul>
-</div>
-
-<script>
-    /*width auto more*/
-    if (jQuery(window).width() > 1024) {
-                calcWidth();
-                var last_visible_element = jQuery('.topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu  > li.nav-item:visible:last');
-        last_visible_element.css('border-right', 'none');
-        
-    }
-    function calcWidth() {
-        var navwidth = 0;
-        var availablespace = 0;
-        var logwid = jQuery('#logotop').outerWidth(true);
-        var defwidth = 0;
-        var intIsEnableSearchTop = "0";
-        var intIsEnableCart = "0";
-        var calAweDropdown = "51";
-        navwidth = navwidth + parseInt(calAweDropdown);
-        let isLayoutId = '35';
-        let fullcontainer = '0';
-        if (intIsEnableSearchTop == 1) {
-            defwidth = defwidth + 60;
-        }
-
-        if (intIsEnableCart == 1) {
-            defwidth = defwidth + 60;
-        }
-        if (typeof logwid === "undefined") {
-            var logwid = 0;
-        }
-        if (isLayoutId == '37' || isLayoutId == '38') {
-            var logwid = 0;
-        }
-        
-        if(fullcontainer=='1'){
-            var pls_pad = 0;
-        }else{
-            var pls_pad = 0;
-        }
-
-        var morewidth = jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.more').outerWidth(true) + 17;
-        jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li:not(.more)').each(function () {
-            navwidth += jQuery(this).outerWidth(true);
-        });
-        var availablespace = parseInt(jQuery('#top-area > #top-sticky > div').width() - pls_pad - morewidth - defwidth - logwid - 34);
-        if (navwidth > availablespace) {
-
-            var lastItem = jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.nav-item:not(.more)').last();
-            var jimwidtest = lastItem.outerWidth(true);
-
-            lastItem.removeClass('nav-item');
-            lastItem.removeClass('dropdown');
-            lastItem.children('a.nav-link').addClass('dropdown-item');
-            lastItem.attr('data-width', lastItem.outerWidth(true));
-
-            if(jimwidtest>0){
-                lastItem.prependTo(jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.more > .menu-fix-li'));
-            }
-            delete lastItem;
-            calcWidth();
-            return 0;
-        } else {
-            if (jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.more > .menu-fix-li').html()!='') {
-                var firstMoreElement = jQuery('.topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu> li.more li').first();
-                if (navwidth + firstMoreElement.data('width') < availablespace) {
-                    firstMoreElement.addClass('nav-item');
-                    firstMoreElement.children('a.nav-link').removeClass('dropdown-item');
-                    firstMoreElement.removeAttr('data-width'); 
-                    firstMoreElement.insertBefore(jQuery('.topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.more'));
-                }
-                delete firstMoreElement;
-            }
-        }
-
-        /*hide more*/
-        if (jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.more > .menu-fix-li').html()!= '') {
-            var thelastone = jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.more > .menu-fix-li > li').length;
-            if (thelastone == 1) {
-                var firstMoreElement2 = jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.more li').first();
-                if ((navwidth + firstMoreElement2.width()) < availablespace) {
-                    firstMoreElement2.addClass('nav-item');
-                    firstMoreElement2.addClass('topmenuLg');
-                    firstMoreElement2.children('a.nav-link').removeClass('dropdown-item');
-                    firstMoreElement2.removeAttr("data-width");
-                    firstMoreElement2.insertBefore(jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.more'));
-                    jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.more').hide();
-                } else {
-                    jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.more').show();
-                }
-                delete firstMoreElement2;
-            } else {
-                jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.more').show();
-            }
-        } else {
-            jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.nav-item:visible:last').addClass('topmenuLg');
-            jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.more').hide();
-        }
-            }
-
-    function calcWidthAfter() {
-                        
-        //affix if reflesh topbar appear
-        if ($(window).scrollTop() > 0) {
-            var logwid = 149;
-        }else{
-            var logwid = jQuery('#logotop').outerWidth(true);
-        }
-        
-        var navwidth = 0;
-        var availablespace = 0;
-        var defwidth = 0;
-        var serwid = jQuery('#searchtop').outerWidth(true);
-        var car2id = jQuery('#cart2').outerWidth(true);
-        var intIsEnableSearchTop = "0";
-        var intIsEnableCart = "0";
-        let isLayoutId = '35';
-        let fullcontainer = '0';
-        if (intIsEnableSearchTop == 1) {
-            defwidth = defwidth + serwid;
-        }
-
-        if (intIsEnableCart == 1) {
-            defwidth = defwidth + car2id;
-        }
-        if(fullcontainer=='1'){
-            var pls_pad = 0;
-        }else{
-            var pls_pad = 0;
-        }
-        jQuery('.topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu').find('.topmenuLg').removeClass('topmenuLg');
-        /* if (typeof serwid === "undefined") {
-            var serwid = 0;
-        } else {
-            var defwidth = defwidth + serwid;
-        }
-
-        if (typeof car2id === "undefined") {
-            var car2id = 0;
-        } else {
-            var defwidth = defwidth + car2id;
-        }*/
-
-        
-        if (typeof logwid === "undefined") {
-            var logwid = 0;
-        }
-        if (isLayoutId == '37' || isLayoutId == '38') {
-            var logwid = 0;
-        }
-
-        var morewidth = jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.more').outerWidth(true);
-        jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li:not(.more)').each(function () {
-            navwidth += jQuery(this).outerWidth(true);
-        });
-
-        /* var availablespace = jQuery('#top-area > #top-sticky > div').width() - morewidth - defwidth - logwid;*/
-        var availablespace = parseInt(jQuery('#top-area > #top-sticky > div').width() - pls_pad - morewidth - defwidth - logwid - 60);
-        
-        if (navwidth > availablespace) {
-            var lastItem = jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.nav-item:not(.more)').last();
-            var jimwidtest = lastItem.outerWidth(true);
-            lastItem.removeClass('nav-item');
-            lastItem.removeClass('dropdown');
-            lastItem.children('a.nav-link').addClass('dropdown-item');
-            lastItem.attr('data-width', lastItem.outerWidth(true));
-            if (jimwidtest > 0) {
-                lastItem.prependTo(jQuery('.topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.more > ul'));
-            }
-            delete lastItem;
-            calcWidthAfter();
-            return 0;
-        } else {
-            if (jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.more > ul.dropdown-menu').html() != '') {
-                            }
-        }
-
-        if (jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.more ul.dropdown-menu').html() != '') {
-            var thelast = jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.more ul.dropdown-menu > li').length;
-            if (thelast == 1) {
-                    //remove more ถ้าเหลือ 1
-                    var firstMoreElement2 = jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.more li').first();
-                    if ((navwidth + firstMoreElement2.width()) < availablespace) {
-                                                jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.more').show();
-                    } else {
-                        jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.more').show();
-                    }
-                    delete firstMoreElement2;
-            } else {
-                    jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.more').show();
-            }
-        } else {
-            jQuery('.headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.more').hide();
-        }
-
-        //add class last item menu ขอบโค้ง
-        jQuery('.topwidget-menu > .navbar-nav.navbar-topmenu.public-topmenu > li.nav-item:visible:last').addClass('topmenuLg');
-
-        jQuery(".headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu > li.nav-item").on('mouseenter', function(){
-            var vjim = jQuery(this);
-            var isfullcontainer = '0';
-            
-            if (jQuery('div', this).length) {
-                var elm = jQuery('.dropdown-menu:first', this);
-                var off = elm.offset();
-                var l = off.left;
-                var w = elm.width();
-                var num_colm = vjim.find('.menu-column > .each-col').length;
-                if(isfullcontainer=='1'){
-                    var docW = jQuery("#top-area > #top-sticky").width();
-                    var isEntirelyVisible = ((l + w) <= docW);
-                }else if(isfullcontainer=='0'){
-                    var docW = jQuery("#top-area > #top-sticky > .container").width();
-                                        var isEntirelyVisible = ((l + w) <= docW);
-                }
-                                if (!isEntirelyVisible && !(vjim.hasClass('more'))){
-                    var tt_widwi = parseInt(parseInt(l) + parseInt(w));
-                    var over_wid = parseInt(tt_widwi - docW);
-                    if(isfullcontainer=='0'){ 
-                        var containtop = jQuery('#top-area > #top-sticky > .container');
-                        var r_container = parseInt(containtop.offset().left + containtop.outerWidth());
-                
-                        var rw_to_rc = parseInt($(window).width() - r_container);
-                        var new_left = (tt_widwi - r_container);
-                    }else if(isfullcontainer=='1'){
-                        var new_left = ((over_wid)+1);
-                    }
-                                        if (jQuery(window).width() > 1181 && jQuery(window).width() < 1200) {
-                        var setleftnew = ((parseInt(elm.css('left')) - new_left) + 105);
-                    }else if (jQuery(window).width() > 1081 && jQuery(window).width() < 1181) {
-                        var setleftnew = ((parseInt(elm.css('left')) - new_left) + 64);
-                    }else if (jQuery(window).width() > 1025 && jQuery(window).width() < 1081) {
-                        var setleftnew = ((parseInt(elm.css('left')) - new_left) + 60);
-                    }else{
-                        var setleftnew = (parseInt(elm.css('left')) - new_left);
-                    }
-                    elm.css('left',setleftnew);
-                }
-                if(vjim.hasClass('more')){
-                    vjim.children('ul.dropdown-menu').addClass('dropdown-menu-right');
-                }
-            }
-        });
-        jQuery(".headerDesktop .topwidget-menu > .navbar-nav.navbar-topmenu > li.nav-item").on('mouseleave', function(){ 
-            var elm = jQuery('.dropdown-menu:first', this);
-            elm.css('left',0);
-            if(jQuery(this).hasClass('more')){
-                jQuery(this).children('ul.dropdown-menu').addClass('dropdown-menu-right');
-            }
-        });
-    }
-    </script>
-
-                                    </div>
-                                </div>
-                            </div>
-                                                                                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-</div>
+                    </div>
+</nav></div>
 <div class="headerMobile">
         <style type="text/css">
     nav .orderingMenu {
@@ -1535,202 +839,9 @@
                     <img src="https://image.makewebeasy.net/makeweb/m_200x200/p9nPd7FfO/DefaultData/tm086_logo_2.png?v=202012190947" alt="logo" title="logo" class="d-inline-block img-logo"/>
                                 </a>
                                             </div>
-                                            <div class="col-12 col-lg d-lg-inline-flex orderingMenu">
-                            <div class="collapse navbar-collapse pb-1" id="navbarNavDropdown">
-                                <style type="text/css">
-    .headerMobile .topwidget-menu .navbar-nav .dropdown-menu {
-        padding: 0;
-        margin: 0;
-    }
-    /*PC hack to hover*/
-    @media (min-width: 1025px) {
-        .headerMobile ul.navbar-topmenu.navbar-nav > li.nav-item:hover > .dropdown-menu{
-            display:block !important;
-        }
-        .headerMobile ul.navbar-topmenu.navbar-nav > li.nav-item > ul.dropdown-menu li:hover > .dropdown-menu{
-            display:block !important;
-        }
-        .headerMobile ul.navbar-topmenu.navbar-nav ul{
-            box-shadow: 0 6px 12px rgba(0,0,0,0.175);
-        }
-        .headerMobile .topwidget-menu {
-            margin: 10px;
-        }
-        .headerMobile ul.dropdown-menu.dropdown-menu-right{
-            left: unset;
-            right:0;
-        }
-        .headerMobile .dropdownfix-menu-right {
-            right:100% !important;
-            left:auto !important;
-        }
-        .headerMobile .public-topmenu .dropdown-menu-right .fa-chevron-right {
-            transform: rotate(180deg);
-            left: 0;
-            position: absolute;
-            top: 12px;
-        }
-        .headerMobile .public-topmenu .dropdown-menu-right .fa-chevron-down{
-            transform: rotate(90deg);
-            left: 0;
-            position: absolute;
-            top: 12px;
-        }
-        .headerMobile .more.hidden{
-            display:none;
-        }
-        .headerMobile .public-topmenu .dropdown-menu:not(.dropdown-menu-right) .fa-chevron-down{
-            transform: rotate(-90deg);
-        }
-        .headerMobile ul.navbar-topmenu.navbar-nav > li.nav-item ul{
-            position: absolute;
-        }
-        .headerMobile .public-topmenu .topmenuLg{
-            border-right:none !important;
-        }
-    }
-    /* tablet*/
-    @media only screen and (min-width: 768px) and (max-width: 1112px) {
-        .headerMobile ul.navbar-topmenu.navbar-nav ul{
-           box-shadow: none;
-        }
-        /*.topwidget-menu {
-            margin: 10px;
-        }*/
-    }
-    /*mobile tablet*/
-    @media  only screen and (max-width: 1024px) {
-        .headerMobile ul.navbar-topmenu.navbar-nav a{
-            text-align: left !important;
-            white-space: normal;
-        }
-        .headerMobile ul.navbar-topmenu.navbar-nav .fa-chevron-down{
-                        transition: all .3s ease 0s;
-            -ms-transition: all .3s ease 0s;
-            -webkit-transition: all .3s ease 0s;
-            -moz-transition: all .3s ease 0s;
-
-        }
-        .headerMobile ul.navbar-topmenu.navbar-nav .fa-chevron-right{
-                         transform: rotate(90deg);
-            transition: all .3s ease 0s;
-            -ms-transition: all .3s ease 0s;
-            -webkit-transition: all .3s ease 0s;
-            -moz-transition: all .3s ease 0s;
-                    }
-        
-        .headerMobile ul.navbar-topmenu.navbar-nav span.arrowCollapse > .fa-chevron-right{
-            right: 12px;
-            top: 27%;
-        }
-        
-        .headerMobile ul.navbar-topmenu.navbar-nav a{
-            word-wrap: break-word;
-        }
-        .headerMobile ul.navbar-topmenu.navbar-nav .more{
-            display:none !important;
-        }
-        .headerMobile .public-topmenu .dropdown.show > a > .arrowCollapse{
-            transform: rotate(180deg);
-            -ms-transform: rotate(180deg);
-            -webkit-transform: rotate(180deg);
-            -moz-transform: rotate(180deg);
-        }
-        .headerMobile .public-topmenu li.show:not(.dropdown) > a > .arrowCollapse > svg{
-            transform: rotate(270deg);
-            -ms-transform: rotate(270deg);
-            -webkit-transform: rotate(270deg);
-            -moz-transform: rotate(270deg);
-        }
-        
-        .headerMobile ul.navbar-topmenu.navbar-nav > li > ul > li > a {
-             padding-left: 30px !important;
-        }
-        .headerMobile ul.navbar-topmenu.navbar-nav ul ul a {
-            padding-left: 45px !important;
-        }
-        .headerMobile ul.navbar-topmenu.navbar-nav ul ul ul a {
-            padding-left: 60px !important;
-        }
-    }
-</style>
-<div class="topwidget-menu">
-    <ul class="navbar-nav navbar-topmenu public-topmenu">
-                                    <li class="nav-item ">
-                    <a class="nav-link abl1" id="topmenuonpage" data-onhome="home" href="/" target="_self">
-                        หน้าแรก                    </a>
-                </li>
-                                                <li class="nav-item dropdown ">
-                    <a class="nav-link abl1"   href="javascript:void(0);" target="_self" style="position: relative;">
-                        สินค้าและผลิตภัณฑ์                                                    <i class="fal fa-chevron-down fa-xs fa-fw arrowCollapse"></i>
-                                            </a>
-                    <ul class="dropdown-menu">
-                                                                                    <li>
-                                    <a class="nav-link dropdown-item abl2"   href="/category" target="_self">
-                                        สินค้า                                    </a>
-                                </li>
-                                                                        </ul>
-                </li>
-                                                <li class="nav-item ">
-                    <a class="nav-link abl1"   href="/รีวิวผู้ใช้งาน" target="_self">
-                        รีวิวผู้ใช้งาน                    </a>
-                </li>
-                                                <li class="nav-item dropdown ">
-                    <a class="nav-link abl1"   href="javascript:void(0);" target="_self" style="position: relative;">
-                        วิธีการสั่งซื้อสินค้า                                                    <i class="fal fa-chevron-down fa-xs fa-fw arrowCollapse"></i>
-                                            </a>
-                    <ul class="dropdown-menu">
-                                                                                    <li>
-                                    <a class="nav-link dropdown-item abl2"   href="/informpayment" target="_self">
-                                        แจ้งการชำระเงิน                                    </a>
-                                </li>
-                                                                                                                <li>
-                                    <a class="nav-link dropdown-item abl2"   href="/ordertracking" target="_self">
-                                        ติดตามสถานะการสั่งซื้อ                                    </a>
-                                </li>
-                                                                        </ul>
-                </li>
-                                                <li class="nav-item ">
-                    <a class="nav-link abl1"   href="javascript:void(0);" target="_self">
-                        สมัครตัวแทนจำหน่าย                    </a>
-                </li>
-                                                <li class="nav-item dropdown topmenuLg">
-                    <a class="nav-link abl1"   href="javascript:void(0);" target="_self" style="position: relative;">
-                        เพิ่มเติม                                                    <i class="fal fa-chevron-down fa-xs fa-fw arrowCollapse"></i>
-                                            </a>
-                    <ul class="dropdown-menu">
-                                                                                    <li>
-                                    <a class="nav-link dropdown-item abl2"   href="/เกี่ยวกับเรา" target="_self">
-                                        เกี่ยวกับเรา                                    </a>
-                                </li>
-                                                                                                                <li>
-                                    <a class="nav-link dropdown-item abl2"   href="/contactus" target="_self">
-                                        ติดต่อเรา                                    </a>
-                                </li>
-                                                                                                                <li>
-                                    <a class="nav-link dropdown-item abl2"   href="/categorycontent" target="_self">
-                                        สาระน่ารู้                                    </a>
-                                </li>
-                                                                        </ul>
-                </li>
-                    
-        <li class="nav-item dropdown more hidden" data-width="80">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="javascript:void(0)">
-                เพิ่มเติม <i class="fal fa-chevron-down fa-xs fa-fw arrowCollapse"></i>
-            </a>
-            <ul class="dropdown-menu"></ul>
-        </li>
-    </ul>
-</div>
-                                                                                                                            </div>
-                        </div>
-                                                                <div class="col-auto pr-1 col-lg-auto text-right order-6 d-inline-flex align-items-center">
-                                                                                                                    <button class="navbar-toggler hamburger hamburger--squeeze" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="hamburger-box">
-                                        <span class="hamburger-inner"></span>
-                                    </span>
-                                </button>
-                                                    </div>
+                                      
+                                                            <div class="col-auto pr-1 col-lg-auto text-right order-6 d-inline-flex align-items-center" style="height:56px;">
+                    </div>
                                     </div>
             </div>
         </div>
@@ -3614,7 +2725,7 @@
                         <a style="font-size: 12px; font-family: 'Tahoma' !important;" class="spanMWE" href="https://www.makewebeasy.com/th" target="_blank" title="ทำเว็บฟรี สร้างเว็บฟรี เว็บฟรี เว็บไซต์ฟรี">MakeWebEasy.com</a>
                     </div>
                 
-                                    <div class="widget_cart_fix_display open"></div>
+                                    <div class="widget_cart_fix_display "></div>
                             </div>
                                 </div>
 
